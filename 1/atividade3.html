@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <style> </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="container-fluid p-2 bg-warning text-center">
+    <nav class="navbar navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap na Prática </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tarefa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1> Exércio Bootstrap na Prática </h1>
+  </header>
+  <section class="container-fluid bg-light text-center p-3">
+    <h2> Saiba mais Sobre a Tarefa </h2>
+    <p> Imagem abaixo explicando um pouco mais de cada etapa para começar a criar uma tarefa com a ajuda do bootstrap,
+      esse exercício tem que ser entregue diretamente na plataforma, e está sendo feito pelo aluno Bruno Vinicius..</p>
+    <br>
+    <div class="row">
+      <figure class="col text-center">
+        <img src="imagens/1.jpg" alt="Mostrando o que é BOOTSTRAP">
+        <figcaption> Logo Bootstrap </figcaption>
+      </figure>
+      <figure class="col text-center">
+        <img src="imagens/2.jpg" alt="Imagem com alguns códigos do BOOTSTRAP">
+        <figcaption> Códigos prontos do bootstrap </figcaption>
+      </figure>
+      <figure class="col text-center">
+        <img src="imagens/3.jpg" alt="Homem apertando a mão de outro">
+        <figcaption> Mostrando que é fácil de fechar projetos </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="container-fluid bg-warning text-center p-3">
+    <h2> Valores dos serviços </h2>
+    <p> Preços com base na grande demanda de clientes, caso tenha alguma dúvida entrar em contato ou fazer um orçamento
+      logo abaixo </p>
+    <table class="table table-warning table-striped table-hover table-bordered border-warning tex">
+      <caption class="text-center"> Descrição dos serviços e valores </caption>
+      <thead class="table-secondary">
+        <tr>
+          <th> Serviço </th>
+          <th> Valor </th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td> Uma página e-commerce </td>
+          <td> R$1000,00 </tFd>
+        </tr>
+        <tr>
+          <td> Duas páginas e-commerce </td>
+          <td> R$1500,00 </tFd>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="container-fluid bg-light p-3">
+    <h2 class="text-center"> Faça já o seu Orçamento </h2> <br>
+    <p class="text-center"> Comece hoje a dar vida ao seu projeto de gaveta, criamos do zero um website completo para
+      e-commerce.</p>
+    <form method="GET" action="">
+      <fieldset>
+        <legend> Seus Dados </legend> <br>
+        <div class="mb-3">
+          <label class="form-label" for="nome">
+            Nome
+          </label>
+          <input type="text" class="form-control" name="nome" id="nome">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">
+            Email
+          </label>
+          <input type="email" required name="email" id="email" class="form-control">
+        </div>
+      </fieldset> <br>
+      <fieldset>
+        <legend class="text-center">Serviços Desejados </legend>
+        <p class="text-center"> Selecione qual serviço você gostaria de contratar hoje. </p>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="passagens" value="Passagens" id="compraPassagem">
+          <label class="form-check-label" for="compraPassagem">
+            Compra website novo
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="hospedagens" value="Hospedagem" id="reservaHospedagem">
+          <label class="form-check-label" for="reservaHospedagem">
+            Contratar freelancer
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="veiculos" value="veiculos" id="aluguelVeiculos">
+          <label class="form-check-label" for="aluguelVeiculos">
+            Mentoria empreendedora
+          </label>
+        </div>
+      </fieldset> <br>
+      <button class="btn btn-secondary"> Enviar </button>
+    </form>
+  </section>
+</body>
+<footer class="container-fluid bg-warning p-3 text-center">
+  <p> Todos direitos reservados ₢ - 2023 </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</html>
